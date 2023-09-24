@@ -46,15 +46,20 @@ int main(int argc, char **argv) {
 6. Have it so the robot is sending a msg that it will move on it's x and z axis. (You must utilize the random number generator with an appropriate range).
 
 ## Task 3
-1\. Review the CMakeLists.txt and package.xml files in the random_rover_driver package directory (~/ros101/src/random_rover_driver). Analyze how package dependencies are specified.
-     1a. In the same package directory, declare a new executable named random_driver in the CMakeLists.txt file. Specify its source files and required libraries. Then, navigate to the workspace directory (~/training) and build the workspace using the catkin_make command. Ensure that all packages, including random_rover_driver, are successfully compiled.
+1. Review the CMakeLists.txt and package.xml files in the random_rover_driver package directory
+   ```
+   (~/training/src/random_rover_driver).
+   ```
+  
+4. Analyze how package dependencies are specified.
+     a. In the same package directory, declare a new executable named random_driver in the CMakeLists.txt file. Specify its source files and required libraries. Then, navigate to the workspace directory (/training) and build the workspace using the catkin_make command. Ensure that all packages, including random_rover_driver, are successfully compiled.
 
 
-2. Running and Testing
+5. Running and Testing
 Launch the rover visualization with the roslaunch command. Verify that the rover visualization launches without errors.
 
-3. In a new terminal instance, source the setup.bash file located in your workspace (~/ros101/devel/setup.bash). Remember that this step should be done in every new terminal instance.
+6. In a new terminal instance, source the setup.bash file located in your workspace (/training/devel/setup.bash). Remember that this step should be done in every new terminal instance.
 
-4. Start the random_driver node using the rosrun command. Ensure you have a running instance of roscore in a separate terminal. Observe if the rover responds to the node's commands as expected.
+7. Start the random_driver node using the rosrun command. Ensure you have a running instance of roscore in a separate terminal. Observe if the rover responds to the node's commands as expected.
 
-5. In a new terminal, use the rostopic echo command to monitor messages on the /rover/cmd_vel topic. Confirm that the node is publishing messages to this topic as expected.
+8. In a new terminal, use the rostopic echo command to monitor messages on the /rover/cmd_vel topic. Confirm that the node is publishing messages to this topic as expected.
