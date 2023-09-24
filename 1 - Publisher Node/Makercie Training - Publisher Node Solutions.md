@@ -95,8 +95,7 @@ msg.linear.x=4*double(rand())/double(RAND_MAX)-2;
 msg.angular.z=6*double(rand())/double(RAND_MAX)-3;
 ```
 
-
-![Alt text](Screen-Shot-2014-09-19-at-10.16.36-AM-300x151.png)
+![[Pasted image 20230924182216.png]]
 
 These lines calculate the random linear x and angular z values that will be sent to rover.
 ```
